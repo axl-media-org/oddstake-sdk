@@ -1,9 +1,9 @@
 {
-    "name": "axl-media-org/:package_name",
-    "description": ":package_description",
+    "name": "axl-media-org/oddstake-sdk",
+    "description": "SDK for the Oddstake service.",
     "keywords": ["laravel", "php"],
     "license": "Apache-2.0",
-    "homepage": "https://github.com/axl-media-org/:package_name",
+    "homepage": "https://github.com/axl-media-org/oddstake-sdk",
     "authors": [
         {
             "name": "AXL Media",
@@ -16,12 +16,12 @@
     },
     "autoload": {
         "psr-4": {
-            "AxlMedia\\:package_namespace\\": "src/"
+            "AxlMedia\\OddstakeSdk\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "AxlMedia\\:package_namespace\\Test\\": "tests"
+            "AxlMedia\\OddstakeSdk\\Test\\": "tests"
         }
     },
     "scripts": {
@@ -40,7 +40,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "AxlMedia\\:package_namespace\\:package_service_provider"
+                "AxlMedia\\OddstakeSdk\\OddstakeSdkServiceProvider"
             ]
         }
     }

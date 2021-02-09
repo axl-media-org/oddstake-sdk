@@ -1,36 +1,36 @@
 Package Name Here
 ===================================
 
-![CI](https://github.com/axl-media-org/:package_name/workflows/CI/badge.svg?branch=master)
-[![codecov](https://codecov.io/gh/axl-media-org/:package_name/branch/master/graph/badge.svg)](https://codecov.io/gh/axl-media-org/:package_name/branch/master)
+![CI](https://github.com/axl-media-org/oddstake-sdk/workflows/CI/badge.svg?branch=master)
+[![codecov](https://codecov.io/gh/axl-media-org/oddstake-sdk/branch/master/graph/badge.svg)](https://codecov.io/gh/axl-media-org/oddstake-sdk/branch/master)
 [![StyleCI](https://github.styleci.io/repos/:styleci_code/shield?branch=master)](https://github.styleci.io/repos/:styleci_code)
-[![Latest Stable Version](https://poser.pugx.org/axl-media-org/:package_name/v/stable)](https://packagist.org/packages/axl-media-org/:package_name)
-[![Total Downloads](https://poser.pugx.org/axl-media-org/:package_name/downloads)](https://packagist.org/packages/axl-media-org/:package_name)
-[![Monthly Downloads](https://poser.pugx.org/axl-media-org/:package_name/d/monthly)](https://packagist.org/packages/axl-media-org/:package_name)
-[![License](https://poser.pugx.org/axl-media-org/:package_name/license)](https://packagist.org/packages/axl-media-org/:package_name)
+[![Latest Stable Version](https://poser.pugx.org/axl-media-org/oddstake-sdk/v/stable)](https://packagist.org/packages/axl-media-org/oddstake-sdk)
+[![Total Downloads](https://poser.pugx.org/axl-media-org/oddstake-sdk/downloads)](https://packagist.org/packages/axl-media-org/oddstake-sdk)
+[![Monthly Downloads](https://poser.pugx.org/axl-media-org/oddstake-sdk/d/monthly)](https://packagist.org/packages/axl-media-org/oddstake-sdk)
+[![License](https://poser.pugx.org/axl-media-org/oddstake-sdk/license)](https://packagist.org/packages/axl-media-org/oddstake-sdk)
 
-**Note:** Replace  ```:package_name``` ```:package_description``` ```:package_namespace``` ```:package_service_provider``` ```:styleci_code``` with their correct values in [README.md](README.md), [CONTRIBUTING.md](CONTRIBUTING.md), [LICENSE](LICENSE) and [composer.json](composer.json) files, then delete this line.
+**Note:** Replace  ```oddstake-sdk``` ```SDK for the Oddstake service.``` ```OddstakeSdk``` ```OddstakeSdkServiceProvider``` ```:styleci_code``` with their correct values in [README.md](README.md), [CONTRIBUTING.md](CONTRIBUTING.md), [LICENSE](LICENSE) and [composer.json](composer.json) files, then delete this line.
 
-This is where your description should go. Try and limit it to a paragraph or two. Consider adding a small example.
+Oddstake Odds implementation in PHP.
 
 ## 🚀 Installation
 
 You can install the package via composer:
 
 ```bash
-composer require axl-media-org/:package_name
+composer require axl-media-org/oddstake-sdk
 ```
 
 Publish the config:
 
 ```bash
-$ php artisan vendor:publish --provider="AxlMedia\:package_namespace\:package_service_provider" --tag="config"
+$ php artisan vendor:publish --provider="AxlMedia\OddstakeSdk\OddstakeSdkServiceProvider" --tag="config"
 ```
 
 Publish the migrations:
 
 ```bash
-$ php artisan vendor:publish --provider="AxlMedia\:package_namespace\:package_service_provider" --tag="migrations"
+$ php artisan vendor:publish --provider="AxlMedia\OddstakeSdk\OddstakeSdkServiceProvider" --tag="migrations"
 ```
 
 ## 🙌 Usage
