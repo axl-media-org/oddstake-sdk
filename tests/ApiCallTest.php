@@ -26,7 +26,7 @@ class ApiCallTest extends TestCase
         $url = Oddstake::debug()->soccer('england');
 
         $this->assertSame(
-            'http://feeds.oddstake.com/get-feed/soccer/odds-extended/england',
+            'http://feeds.oddstake.com/get-feed/soccer/odds-extended/england?only=1x2,Over/Under,Home/Away,Double Chance,Both Teams To Score,Correct Score,Asian Handicap',
             $url
         );
     }

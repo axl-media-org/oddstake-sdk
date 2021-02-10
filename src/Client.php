@@ -38,6 +38,16 @@ abstract class Client
     protected $sport;
 
     /**
+     * List of wanted odds type.
+     *
+     * @var array
+     */
+    protected $types = [
+        '1x2', 'Over/Under', 'Home/Away', 'Double Chance',
+        'Both Teams To Score', 'Correct Score', 'Asian Handicap',
+    ];
+
+    /**
      * Enable debugging.
      *
      * @return $this
@@ -90,6 +100,19 @@ abstract class Client
     }
 
     /**
+     * Set the only types to retrieve.
+     *
+     * @param  array  $types
+     * @return $this
+     */
+    public function types(array $types)
+    {
+        $this->types = $types;
+
+        return $this;
+    }
+
+    /**
      * Make an API call.
      *
      * @param  string  $method
@@ -130,7 +153,9 @@ abstract class Client
      */
     public function url(string $endpoint): string
     {
-        return "{$this->getApiBaseUrl()}{$endpoint}";
+        $types = implode(',', $this->types);
+
+        return "{$this->getApiBaseUrl()}{$endpoint}?only={$types}";
     }
 
     /**
