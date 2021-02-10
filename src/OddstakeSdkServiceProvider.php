@@ -13,7 +13,7 @@ class OddstakeSdkServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        $this->bindFacade();
     }
 
     /**
@@ -24,5 +24,17 @@ class OddstakeSdkServiceProvider extends ServiceProvider
     public function register()
     {
         //
+    }
+
+    /**
+     * Bind the Laravel facade to the Oddstake class.
+     *
+     * @return void
+     */
+    protected function bindFacade(): void
+    {
+        $this->app->bind('oddstake', function () {
+            return new Oddstake;
+        });
     }
 }
