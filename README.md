@@ -19,6 +19,29 @@ You can install the package via composer:
 composer require axl-media-org/oddstake-sdk
 ```
 
+## 🙌 Usage
+
+### Laravel
+
+```php
+use AxlMedia\OddstakeSdk\Facade as Oddstake;
+
+foreach (Oddstake::getSupportedCountries() as $country) {
+    $response = Oddstake::soccer($country['feed_name']);
+}
+
+```
+
+### PHP
+
+```php
+use AxlMedia\OddstakeSdk\Oddstake;
+
+foreach (Oddstake::getSupportedCountries() as $country) {
+    $response = (new Oddstake)->soccer($country['feed_name']);
+}
+```
+
 ## 🐛 Testing
 
 ``` bash
