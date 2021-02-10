@@ -2,8 +2,6 @@
 
 namespace AxlMedia\OddstakeSdk;
 
-use Illuminate\Support\Str;
-
 class Oddstake extends Client
 {
     /**
